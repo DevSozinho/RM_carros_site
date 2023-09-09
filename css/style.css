@@ -1,0 +1,27 @@
+/*Base inicial de documento css(reset/formatação/var's)*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+html,body{
+    height: 100%;
+}
+a{
+    color: rgb(97, 95, 219);
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover{
+    color: rgb(73, 71, 216);
+    text-decoration: underline;
+}
+:root{
+    --trasitionButton: 0.3s;
+    --CorPadraoText: #FFFFFF;
+    --MinimizarWidth: 1280px;
+    --Ponteiro: pointer;
+}
+/**/
