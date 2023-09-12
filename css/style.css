@@ -67,8 +67,38 @@ header nav.desktop ul li a{
 header nav.desktop ul li:first-child a{
     color: #EB2D2D;
 }
+nav.mobile{
+    margin-top: 40px;
+    display: none;
+    width: 32px;
+    height: 32px;
+    float: right;
+    cursor: pointer;
+    background-image: url("../img/icon_menu.png");
+    background-size: 100% 100%;
+}
+nav.mobile ul{
+    width: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 110px;
+    z-index: 99;
+}
+nav.mobile li{
+    font-size: 23px;
+    padding: 20px 0;
+    font-style: italic;
+    border: 0.8px solid #EB2D2D;
+}
+nav.mobile li a{
+    color: #000000;
+    text-decoration: none !important;
+}
 /*Banner*/
 section.banner{
+    overflow: hidden;
     width: 100%;
     height: 600px;
     background-color: var(--black);
@@ -123,9 +153,33 @@ section.banner{
     position: relative;
     left: -30px;
 }
-
-
-
+section.veiculos-destaque{
+    padding: 90px 2%;
+}
+section.veiculos-destaque h2{
+    position: relative;
+    background-color: #FFFFFF;
+    display: inline-block;
+    text-align: center;
+    font-size: 27px;
+    padding: 0 20px;
+    font-style: italic;
+    font-family: var(--font_Oswald);
+    text-transform: uppercase;
+}
+.line-titulo{
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.ln1{
+    position: absolute;
+    height: 2px;
+    top: 20px;
+    background-color: #333333;
+    width: 100%;
+}
 
 
 /*Responsivo 768px*/
@@ -139,6 +193,12 @@ section.banner{
 	{
 		display: none;
 	}
+    nav.mobile{
+        display: block;
+    }
+    header nav.mobile ul li:first-child a{
+        color: #EB2D2D;
+    }
 }
 /*Responsivo 580px*/
 @media screen and (max-width: 580px){
