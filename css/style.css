@@ -79,7 +79,7 @@ nav.mobile{
 }
 nav.mobile ul{
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: #fffffff8;
     position: absolute;
     text-align: center;
     left: 0;
@@ -156,7 +156,52 @@ section.banner{
 section.veiculos-destaque{
     padding: 90px 2%;
 }
-section.veiculos-destaque h2{
+section.veiculos-destaque .container{
+    max-width: 1000px;
+    padding: 40px 0;
+}
+.vitrine-destaque{
+     float: left;
+     font-family: var(--font_Oswald);
+     width: 33.3%;
+}
+.vitrine-destaque .carro-img{
+    width: 100%;
+    padding-top: 100%;
+    background-image: url("../img/carro1.jpg");
+    border: 8px solid #FFFFFF;
+    background-size: 100% 100%;
+}
+.vitrine-destaque h2{
+    padding-left: 8px;
+    color: #000000;
+    font-style: italic;
+    font-size: 20px;
+}
+.vitrine-destaque p{
+    padding: 8px 0 0 8px;
+    color: #353535;
+    font-size: 15px;
+    font-style: italic;
+}
+.vitrine-destaque a{
+    margin: 10px 0 0 8px;
+    color: #FFFFFF;
+    background-color: #EB2D2D; 
+    font-style: italic;
+    width: 150px;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 5px solid #B21E1E; 
+    text-decoration: none !important;  
+    transition: 0.2s;
+}
+.vitrine-destaque a:hover{
+    border-bottom: 2px solid #B21E1E;
+}
+section.veiculos-destaque .line-titulo > h2{
     position: relative;
     background-color: #FFFFFF;
     display: inline-block;
@@ -168,7 +213,7 @@ section.veiculos-destaque h2{
     text-transform: uppercase;
 }
 .line-titulo{
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     position: relative;
     text-align: center;
@@ -212,4 +257,27 @@ section.veiculos-destaque h2{
 .text-banner .text-banner-single:nth-of-type(4){
 	width: 270px;
 }
+section.veiculos-destaque .container{
+    max-width: 1000px;
+    padding: 40px 0;
+    text-align: center;
+}
+.vitrine-destaque{
+    display: inline-block;
+    float: none;
+    width: 80%;
+    margin-top: 20px;
+}
+.vitrine-destaque a{
+    display: inline-block;
+}
+section.veiculos-destaque .line-titulo > h2{
+        font-size: 23px;
+}
+}
+/*Responsivo 480px*/
+@media screen and (max-width: 480px){
+    .vitrine-destaque{
+        width: 100%;
+    }
 }
