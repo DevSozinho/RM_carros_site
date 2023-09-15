@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-shadow: 4px 4px 7px rgba(0,0,0,0.20) !important;
 }
 html,body{
     height: 100%;
@@ -23,7 +24,7 @@ a:hover{
 }
 .container{
     width: 100%;
-    max-width: 1280px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 .clear{clear: both;}
@@ -186,20 +187,19 @@ section.veiculos-destaque .container{
 }
 .vitrine-destaque a{
     margin: 10px 0 0 8px;
-    color: #FFFFFF;
-    background-color: #EB2D2D; 
-    font-style: italic;
-    width: 150px;
-    display: block;
-    font-size: 16px;
-    text-align: center;
-    line-height: 40px;
-    border-bottom: 5px solid #B21E1E; 
-    text-decoration: none !important;  
-    transition: 0.2s;
 }
-.vitrine-destaque a:hover{
+.btn1{
+    transition: 0.2s;
+    border-bottom: 2px solid transparent;
+    box-shadow: 8px 8px 8px -1px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 8px 8px 8px -1px rgba(0,0,0,0.28);
+    -moz-box-shadow: 8px 8px 8px -1px rgba(0,0,0,0.28);
+}
+.btn1:hover{
     border-bottom: 2px solid #B21E1E;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
 }
 section.veiculos-destaque .line-titulo > h2{
     position: relative;
@@ -213,7 +213,7 @@ section.veiculos-destaque .line-titulo > h2{
     text-transform: uppercase;
 }
 .line-titulo{
-    max-width: 1000px;
+    max-width: 1400px;
     margin: 0 auto;
     position: relative;
     text-align: center;
@@ -225,10 +225,155 @@ section.veiculos-destaque .line-titulo > h2{
     background-color: #333333;
     width: 100%;
 }
+.half1{
+    width: 50%;
+    background-color: #242424;   
+    padding: 90px 0; 
+    color: #FFFFFF;
+    text-align: right;
+    font-family: var(--font_Oswald);
+}
+.half1-wraper{
+    padding-right: 20%;
+    text-align: left;
+    display: inline-block;
+}
+.half1-wraper h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+}
+.half1-wraper ul{
+    display: inline-block;
+    margin-top: 5px;
+    list-style-position: inside;
+}
+.btn1{
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    background-color: #EB2D2D;
+    text-decoration: none !important;
+    border-bottom: 5px solid #B21E1E;
+    color: #FFFFFF !important;
+    font-size: 16px;
+    font-style: italic;
+    width: 150px;
+}
+.half1-wraper a{
+    margin: 20px 0 0 40px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.half2{
+    width: 50%;
+    background-color: #EB2D2D;   
+    padding: 90px 100px; 
+    color: #FFFFFF;
+    font-family: var(--font_Oswald);
+}
+.depoimentos-single q::before{
+    content: "\201C  ";
+    font-size: 15px;
+    color: #e4e4e4;
+}
+.depoimentos-single q::after{
+    content: "\201D";
+    font-size: 15px;
+    color: #e4e4e4;
+}
+.half2 h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+}
+.half2 .depoimentos-single{
+    margin-top: 19px;
+}
+.depoimentos-single p{
+    font-size: 22px;
+}
+.navigation{
+    float: left;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+}
+.navigation i{
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #B21E1E;
+}
+.arrows{
+    float: left;
+}
+.nome-depoimento{
+    float: right;
+    color: #252525;
+    font-size: 23px;
+}
+.servicos-descricao{
+    display: flex;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsivo 1100px*/
+@media screen and (max-width: 1100px){
+    .half1{
+        text-align: center;
+    }
+    .half1-wraper{
+        text-align: left;
+        padding-right: 0;
+    }
+    .half1-wraper a{
+        display: block;
+        margin: 15px 0 0 0;        
+    }
+}
+/*Responsivo 800px*/
+@media screen and (max-width: 850px){
+    .half1-wraper a{
+        display: block;
+        margin: 15px 0 0 0;
+    }        
+}
 /*Responsivo 768px*/
 @media screen and (max-width: 768px){
+    section.servicos-descricao{
+        flex-direction: column;
+    }
+    .half1{
+        padding: 80px 100px;
+        text-align: center;
+    }
+    .half2{
+        padding: 80px 4%;
+    }
+    .half1, .half2{
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+    }
 	section.banner{
 		background-size: cover;
 		background-position: 100px center;
