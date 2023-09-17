@@ -4,6 +4,8 @@
     margin: 0;
     box-sizing: border-box;
     text-shadow: 4px 4px 7px rgba(0,0,0,0.20) !important;
+    font-family: var(--font_Oswald);
+    resize: none;
 }
 html,body{
     height: 100%;
@@ -41,7 +43,6 @@ header{
     padding: 20px 2% 35px 2%;
     height: 130px;
     font-weight: var(--bold);
-    font-family: var(--font_Oswald);
     font-style: italic;
 }
 /*Menu header*/
@@ -118,7 +119,6 @@ section.banner{
 	height: 70px;
 	line-height: 70px;
 	padding-left: 50px;
-    font-family: var(--font_Oswald);
 	text-transform: uppercase;
     font-weight: bold;
 	color: var(--TextWhite);
@@ -163,7 +163,6 @@ section.veiculos-destaque .container{
 }
 .vitrine-destaque{
      float: left;
-     font-family: var(--font_Oswald);
      width: 33.3%;
 }
 .vitrine-destaque .carro-img{
@@ -201,7 +200,7 @@ section.veiculos-destaque .container{
     -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
     -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
 }
-section.veiculos-destaque .line-titulo > h2{
+.line-titulo > h2{
     position: relative;
     background-color: #FFFFFF;
     display: inline-block;
@@ -209,7 +208,6 @@ section.veiculos-destaque .line-titulo > h2{
     font-size: 27px;
     padding: 0 20px;
     font-style: italic;
-    font-family: var(--font_Oswald);
     text-transform: uppercase;
 }
 .line-titulo{
@@ -231,7 +229,6 @@ section.veiculos-destaque .line-titulo > h2{
     padding: 90px 0; 
     color: #FFFFFF;
     text-align: right;
-    font-family: var(--font_Oswald);
 }
 .half1-wraper{
     padding-right: 20%;
@@ -270,7 +267,6 @@ section.veiculos-destaque .line-titulo > h2{
     background-color: #EB2D2D;   
     padding: 90px 100px; 
     color: #FFFFFF;
-    font-family: var(--font_Oswald);
 }
 .depoimentos-single q::before{
     content: "\201C  ";
@@ -316,9 +312,79 @@ section.veiculos-destaque .line-titulo > h2{
 .servicos-descricao{
     display: flex;
 }
-
-
-
+section.contato .container{
+    max-width: 650px;
+    padding: 80px 2%;
+}
+section.contato form{
+    max-width: 600px;
+    margin: 50px auto;
+}
+section.contato .input-wraper{
+    float: left;
+    padding: 10px;
+    margin-top: 7px;
+}
+section.contato input[type="text"],
+section.contato input[type="email"],
+section.contato input[type="tel"]{
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 50%;
+}
+section.contato textarea{
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    height: 120px;
+    line-height: 40px;
+    padding: 8px;
+}
+section.contato input[type="submit"]{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    cursor: pointer;
+    display: inline-block;
+}
+section.contato form .input-wraper:nth-of-type(5){
+    text-align: center;
+}
+footer nav ul li:first-child a{
+    color: #EB2D2D;
+}
+footer{
+    padding: 40px 2%;
+    background-color: #252525;
+}
+footer nav{
+    float: left;
+}
+footer nav ul{
+    list-style-type: none;
+}
+footer nav ul li{
+    float: left;
+    padding: 0 20px;
+    font-style: italic;
+    font-size: 19px;
+}
+footer nav ul a{
+    color: #FFFFFF;
+}
+footer p{
+    float: right;
+    color: #FFFFFF;
+    font-size: 19px;
+    font-style: italic;
+}
 
 
 
@@ -388,6 +454,18 @@ section.veiculos-destaque .line-titulo > h2{
     }
     header nav.mobile ul li:first-child a{
         color: #EB2D2D;
+    }
+    .w50{
+        width: 100%;
+    }
+    footer nav{
+        display: none;
+    }
+    footer{
+        text-align: center;
+    }
+    footer p{
+        float: none;
     }
 }
 /*Responsivo 580px*/
