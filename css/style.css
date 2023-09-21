@@ -63,7 +63,8 @@ header nav.desktop ul li a{
 header nav.desktop ul li:first-child a{
     color: #EB2D2D;
 }
-nav.mobile{
+nav.mobile
+{
     margin-top: 40px;
     display: none;
     width: 32px;
@@ -419,8 +420,19 @@ section.venda{
     color: #000000;
     font-weight: normal;
 }
+
 .search1 input[type="range"]{
-    width: 300px;
+    width: 90%;
+    margin-top: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    background-color: #EB2D2D;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 0.8px solid #CCCCCC;
+    background-image: linear-gradient(to bottom,#b12a2a,#EB2d2d);
 }
 .valor-pesquisa{
     margin-top: 8px;
@@ -453,15 +465,79 @@ section.venda{
 .form-venda-wraper label{
     width: 15px;
     height: 15px;
-    border: 1px solid #CCCCCC;
+    border: 1px solid #cccccc65;
     border-radius: 8px;
     display: inline-block;
     cursor: pointer;
+    position: relative;
+}
+.form-venda-wraper input[type="checkbox"]:checked +
+ label > .circle{
+    display: block;
+}
+.circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #EB2D2D;
+    position: absolute;
+    left: 1.9px;
+    top: 1.9px;
+    display: none;
 }
 .form-venda-wraper span{
     vertical-align: top;
     padding: 0 10px;
 }
+/*Slider Teste*/
+.search1 input[type="range"]::-webkit-slider-thumb{
+    all: unset;
+    -webkit-appearance: none;
+    /*Format*/
+    background-image: linear-gradient(to bottom,#b12a2a,#EB2d2d);
+    border: 0.5px solid #cccccc65;
+    width: 25px;
+    height: 25px;
+}
+.search1 input[type="range"]::-ms-range-thumb{
+    background-image: linear-gradient(to bottom,#b12a2a,#EB2d2d);
+    border: 0.5px solid #cccccc65;
+    width: 25px;
+    height: 25px;
+}
+.search1 input[type="range"]::-moz-range-thumb{
+    background-image: linear-gradient(to bottom,#b12a2a,#EB2d2d);
+    border: 0.5px solid #cccccc65;
+    width: 25px;
+    height: 25px;
+}
+/*Vitrine*/
+.vitrine-venda{
+    float: left;
+    width: 70%;
+    overflow: hidden;
+}
+.vitrine-venda .vitrine-destaque{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -517,7 +593,7 @@ section.venda{
 		display: none;
 	}
     nav.mobile{
-        display: block;
+        display: none;
     }
     header nav.mobile ul li:first-child a{
         color: #EB2D2D;
@@ -533,6 +609,23 @@ section.venda{
     }
     footer p{
         float: none;
+    }
+    .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+    .vitrine-venda{
+        width: 100%;
+        text-align: center;
+    }
+    .search1{
+        display: inline-block;
+    }
+    .search2{
+        display: inline-block;
+    }
+    section.venda{
+        padding: 15px 10px;
     }
 }
 /*Responsivo 580px*/
