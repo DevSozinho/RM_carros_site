@@ -583,6 +583,47 @@ section.venda-single .container{
     background-repeat: no-repeat;
     background-image: url("../img/carro1.jpg");
 }
+/*Sobre*/
+section.sobre{
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 60px 2% 20px 2%;
+}
+section.sobre .container{
+    max-width: 840px;
+    margin-top: 30px;
+}
+section.sobre .img-destaque-sobre{
+    width: 100%;
+    padding-top: 60%;
+    background-color: rgb(220,220,220);
+}
+section.sobre .descricao-autor{
+    margin-top: 20px;
+}
+.descricao-autor h2{
+    font-size: 24px;
+}
+.descricao-autor p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.descricao-autor2{
+    margin-top: 40px;
+}
+.descricao-autor2 p{
+    width: 70%;
+    float: left;
+    padding: 10px;
+    font-style: italic;
+}
+.img-small{
+    width: 20%;
+    padding-top: 20%;
+    float: left;
+    background-color: rgb(220,220,220);
+}
+
 
 
 
@@ -664,6 +705,7 @@ section.venda-single .container{
         display: none;
     }
     footer{
+        margin-top: 20px;
         text-align: center;
     }
     footer p{
@@ -732,6 +774,14 @@ section.veiculos-destaque .container{
 }
 section.veiculos-destaque .line-titulo > h2{
         font-size: 23px;
+}
+.img-small{
+    width: 100%;
+    padding-top: 100%;
+}
+.descricao-autor p{
+    width: 100%;
+    padding: 20px 0;
 }
 }
 /*Responsivo 480px*/
